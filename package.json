@@ -1,0 +1,48 @@
+{
+    "name": "node-koa",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "npm run dev",
+        "dev": "cross-env NODE_ENV=development nodemon --harmony  index.js",
+        "serve": "cross-env NODE_ENV=production nodemon --harmony  index.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@koa/router": "^10.0.0",
+        "chalk": "^3.0.0",
+        "cheerio": "^1.0.0-rc.3",
+        "config-lite": "^2.1.0",
+        "crypto-js": "^4.1.1",
+        "jsonwebtoken": "^8.5.1",
+        "koa": "^2.11.0",
+        "koa-bodyparser": "^4.2.1",
+        "koa-compose": "^4.1.0",
+        "koa-onerror": "^4.1.0",
+        "lodash": "^4.17.15",
+        "md5": "^2.3.0",
+        "qs": "^6.10.1"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.8.4",
+        "@babel/compat-data": "^7.10.3",
+        "@babel/core": "^7.8.7",
+        "@babel/plugin-proposal-export-default-from": "^7.8.3",
+        "@babel/plugin-proposal-export-namespace-from": "^7.8.3",
+        "@babel/plugin-transform-async-to-generator": "^7.8.3",
+        "@babel/plugin-transform-modules-commonjs": "^7.8.3",
+        "@babel/polyfill": "^7.8.7",
+        "@babel/preset-env": "^7.8.7",
+        "@babel/register": "^7.8.6",
+        "cross-env": "^7.0.2",
+        "koa-webpack": "^5.3.0",
+        "nodemon": "^2.0.2",
+        "webpack": "^4.42.0",
+        "webpack-cli": "^3.3.11",
+        "webpack-dev-middleware": "^3.7.2",
+        "webpack-hot-client": "^4.1.2"
+    }
+}
