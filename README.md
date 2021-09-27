@@ -1,43 +1,6 @@
 # koa2-demo
-
+为了本地开发微信网页需要调用jsSdk
 基于Koa2搭建的服务器
-```
-|-- .babelrc  
-|-- .gitignore  
-|-- app.js  
-|-- directoryList.md  
-|-- index.js  
-|-- package-lock.json  
-|-- package.json  
-|-- README.md  
-|-- config  
-|   |-- default.js  
-|   |-- development.js  
-|   |-- webpac.config.js  
-|-- controllers //接口处理  
-|   |-- admin  
-|   |   |-- index.js  
-|   |-- user  
-|       |-- index.js  
-|-- model  //mongoose model
-|   |-- adminModel.js
-|   |-- counts.js
-|   |-- userModal.js
-|-- mongodb  //mongo连接
-|   |-- db.js  
-|   |-- index.js  
-|-- res  //返回数据格式
-|   |-- genSend.js  
-|   |-- status.js  
-|-- router  //路由定义
-|   |-- 404.js
-|   |-- admin.js
-|   |-- index.js
-|   |-- user.js
-|   |-- weather.js
-|-- units  
-	|-- seniverse.js  
-```
 
 ## 安装依赖
 npm i
@@ -46,3 +9,9 @@ npm i
 
 npm run serve
 
+## 配置
+
+config 目录下配置自己微信的appid、secret、token等
+dev 对应 development.js
+serve 对应 production.js
+默认再default.js
