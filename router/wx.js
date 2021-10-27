@@ -19,6 +19,7 @@ wx.get('/callback', async (ctx) => {
 
 wx.get('/getSign', async (ctx) => {
   const query = ctx.request.query;
+  console.log('query', query)
   try {
     const res = await getConfig(query);
     ctx.body = {

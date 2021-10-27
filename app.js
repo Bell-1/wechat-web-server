@@ -2,9 +2,13 @@ import Koa from 'koa'
 import onerror from 'koa-onerror'
 import bodyParser from 'koa-bodyparser'
 import router from './router'
+const Send = require('./utils/res')
 const config = require('config-lite')(__dirname);
 const app = new Koa();
 
+
+app.context.successSend = Send.successSend;
+app.context.failSend = Send.failSend;
 
 app.use(bodyParser());
 
@@ -13,6 +17,7 @@ app.use(router.routes()).use(router.allowedMethods());
 
 // 404
 app.use(ctx => {
+  console.log(ctx.request.url)
     ctx.status = 404;
     ctx.failSend(-404);
 });
